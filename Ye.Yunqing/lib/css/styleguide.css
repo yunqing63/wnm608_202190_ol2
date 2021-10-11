@@ -318,6 +318,10 @@ padding-left: 5px;
 	display: none;
 }
 
+
+
+
+
 /*product list*/
 .figure.product{
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -469,4 +473,79 @@ tr:nth-child(even) {
 	padding:50px;
 	text-align: center;
 
+}
+
+
+/* TABLES */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.table th,
+.table td {
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+
+.table.striped tbody tr:nth-child(odd) {
+	background-color: var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr,
+.table.lined.all tbody tr {
+	border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid var(--color-neutral-medium);
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.bg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	border-radius: 0.3em;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+.bg:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.bg1 {
+	background-color: #a0a3d9;
+}
+.bg2 {
+	background-color: #3fbfb2;
+}
+.bg3 {
+	background-color: #565959;
+}
+.bg4 {
+	background-color: #f25c5c;
+}
+.bg5 {
+	background-color: #f2f2f2;
+	border: 1px solid #5659591d;
+	color: #56595991;
 }
