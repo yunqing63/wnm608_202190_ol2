@@ -21,9 +21,6 @@ body{
 	background-color: #fcf6f6;
 }
 
-h1, h2, h3, h4, h5{
-font-family: 'Bodoni Moda', serif;
-}
 
 
 /*layout classes*/
@@ -83,10 +80,38 @@ font-family: 'Bodoni Moda', serif;
 
 }
 
+.nav-material li,
+.nav-stretch li {
+	flex: 1 1 auto;
+}
+
+.nav-pills a {
+	border-radius: 2 em;
+	padding: 0.5em 1em;
+
+}
+
+.nav-crumbs a {
+	display: inline-block;
+
+}
+
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+
+
+
+
 .logo{
 	font-family: adage-script-jf,sans-serif;
 font-weight: 400;
 font-style: normal;
+font-size: 60px;
 }
 
 
@@ -109,6 +134,7 @@ a:hover{
 	display: block;
 	padding: 0.2em 0.5em;
 	transition: all 0.4s;
+	padding-top: 20px;
 }
 
 .nav a:hover {
@@ -191,17 +217,12 @@ a:hover{
 	font-size: 1em;
 }
 /*header*/
-.header, .hearer-purple {
+.header {
 	background-color: #8F6684;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.image-display{
-	background-color: grey;
-	width: 100%;
-	height: 400px;
-	text-align: center;
-}
+
 
 /*card*/
 
@@ -372,7 +393,7 @@ p{
 
 /*button section*/
 .button-section{
-
+padding-top: 300px;
 	text-align: center;
 	margin-right: 30px;
 }
@@ -393,13 +414,13 @@ p{
 .button1 {
 	padding:10px;
 	background-color: white;
-	color: #678587;
-	border: 2px solid #678587;
+	color: #341F48;
+	border: 2px solid #341F48;
 	text-transform: uppercase;
 }
 
 .button1:hover {
-	background-color: #678587;
+	background-color: #341F48;
 	color: white;
 }
 
@@ -419,7 +440,7 @@ p{
 }
 
 .button2:hover{
-	background-color: #CF9860;
+	background-color: #febf34;
 	color: white;
 	padding: 7px 10px;
 }
@@ -476,7 +497,7 @@ figcaption{
 }
 
 .media-image {
-	max-width: 100%;
+	max-width: 340px;
 	vertical-align: text-bottom;
 
 }
@@ -558,13 +579,13 @@ figcaption{
 .favorite label {
 	transition: all 0.3s;
 	display: inline-block;
-	transform: scale(1, 1);
+	transform: scale(2, 2);
 	color: var(--color-neutral-medium);
 }
 
 .favorite input:checked + label {
 	color: red;
-	transform: scale(1.5, 1.5);
+	transform: scale(2.5, 2.5);
 }
 
 
@@ -671,8 +692,10 @@ display: block;
 }
 
 .figure img {
-	width: 100%;
-	vertical-align: text-bottom;
+    width:100%;
+	vertical-align: text-right;
+}
+
 }
 
 .figure figcaption {
@@ -866,3 +889,12 @@ tr:nth-child(even) {
 	border: 1px solid #5659591d;
 	color: #56595991;
 }
+
+
+
+
+
+
+
+
+

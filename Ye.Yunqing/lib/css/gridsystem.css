@@ -287,8 +287,8 @@ color: white;
 }
 
 .item {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     color: var(--color-white);
     text-align: center;
 }

@@ -49,68 +49,82 @@
 
 
 
-<!-- Stretch nav -->
-
-
-        <div id="navigations">
-           
-
-            <script>
-                const makeNav = (classes = '') => {
-                    const links = ['Rings', 'Earrings', 'Necklaces'];
-                    let ran = Math.floor(Math.random() * links.length);
-                    document.write( `
-                <div>
-                    <nav class="${classes}">
-                        <ul>
-                        ${links.reduce((r,o,i) => {
-                        return r+`<li class="${ran == i?'active':''}"><a href="#">${o}</a></li>`;
-                    }, '')}
-                        </ul>
-                    </nav>
-                </div>
-                `);
-                }
-            </script>
-
-              <script>makeNav('nav nav-stretch')</script>
-        </div>
-
-
 
 
    <!-- FIGURES -->
     <div class="container section" id="figures">
        
         <div class="card">
-           
+
+           <div class="imageandtext">
+
+             <div class="image-text">
+               
+                <h2 class="exquisite">Exquisite Gifts for Exceptional Ones</h2>
+              <h4 class="browse">Browse the collection</h4>
+
+
+  <div class="button-section1">
+                <a href="#" class="button2">Learn More</a>
+              </div> 
+
+
+
+
+              <h6 class="author">----Helen Abergrey</h6>
+            </div>
+
+             
+
+
+
+
+
             <figure class="figure">
-                <img src="https://via.placeholder.com/400x400?text=product" alt="">
-                <figcaption>Product</figcaption>
-            </figure>
+                <img src="https://images.unsplash.com/photo-1611540497578-4cb17aa00718?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ0NTAxMg&ixlib=rb-1.2.1&q=85" alt="">
+             </figure>
+               
+
+             </div>
         </div>
     </div>
 
 
 
-<!--grid system-->
+
+
+
+<!-- texts -->
+<div class="section">
+  <h2 class="million" >2 Million Customer Celebrations Since 1999</h2>
+<h4 class="find">Find Your New Heirloom</h4>
+</div>
+
+
+
+
+<!--grid system-1-->
+<div class="section">
+
+
+<div class="pinky">
     <div class="section container" id="gridsystem">
       
         <div class="grid-system">
 
             <div class="col-xs-6 col-md-3">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x400?text=Product" alt="hp-01" class="media-image">
+                    <img class="p2" src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDI3MQ&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x400?text=Product" alt="hp-01" class="media-image">
+                    <img class="p2" src="https://images.unsplash.com/photo-1608543837489-0fab463c925e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDQ0MQ&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x400?text=Product" alt="hp-01" class="media-image">
+                    <img class="p2" src="https://images.unsplash.com/photo-1591042028929-c18138f0588a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDYxMQ&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
                 </div>
             </div>
 
@@ -118,7 +132,64 @@
     </div>
 
 
+</div>
 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--grid system-->
+<div class="section">
+
+
+<div class="purple">
+    <div class="section container" id="gridsystem">
+      
+         <div class="grid-system">
+
+            <div class="col-xs-6 col-md-3">
+                <div class="card">
+                    <img class="p2" src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDYxMQ&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="card">
+                    <img class="p2" src="https://images.unsplash.com/photo-1566977744263-79e677f4e7cf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDY4NA&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="card">
+                    <img class="p2" src="https://images.unsplash.com/photo-1598163629522-8630a55f57cd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNTQ2NDQ4NQ&ixlib=rb-1.2.1&q=85" alt="hp-01" class="media-image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+
+
+<?php include "parts/footer.php"; ?>
 
 </body>
 </html>
