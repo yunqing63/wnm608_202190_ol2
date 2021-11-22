@@ -56,6 +56,7 @@ body{
 
 /*flex*/
 .flex-stretch{
+	text-align: left;
 	flex: 1 1 auto;
 }
 .flex-none{
@@ -69,6 +70,10 @@ body{
 	justify-content: center;
 }
 
+
+.flex-column{
+	flex-direction: column;
+}
 
 /*component*/
 .nav {
@@ -255,6 +260,30 @@ margin: 1em;
 }
 
 
+.card.medium {
+  background-color: var(--color-neutral-medium);
+}
+
+.card.flat {
+  padding: 0;
+}
+
+.card-section ~ .card-section {
+  border-top: 1px solid var(--color-neutral-light);
+}
+.card-section {
+  padding: 1em;
+}
+
+.view-window {
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 
 p{
 	font-family: 'Roboto', sans-serif;
@@ -393,9 +422,9 @@ p{
 
 /*button section*/
 .button-section{
-padding-top: 300px;
+
 	text-align: center;
-	margin-right: 30px;
+	
 }
 .button {
 	border: none;
@@ -412,8 +441,8 @@ padding-top: 300px;
 }
 
 .button1 {
-	padding:10px;
-	background-color: white;
+	padding: 10px 20px;
+		background-color: white;
 	color: #341F48;
 	border: 2px solid #341F48;
 	text-transform: uppercase;
@@ -463,12 +492,21 @@ padding-top: 300px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
 	background-color: white;
+	overflow: hidden;
+	height: 100%;
 }
 
 .col-xs-12{
 	width: 370px;
 	margin:10px;
 }
+
+
+.col-xs-15{
+	width: 670px;
+	margin:10px;
+}
+
 
 figcaption{
 	text-align: center;
@@ -523,13 +561,14 @@ figcaption{
 .form-item,
 .form-input,
 .form-button{
+
 	display: inline-block;
-	background-color: var(--color-neutral-light);
+	background-color:  inherit;
 	border-width: 0;
 	padding: 0.5em 1em;
 	font: inherit;
 	-webkit-appearance: none;
-	color: inherit;
+	color: white;
 	width: 100%;
 	outline: 0;
 }
@@ -626,20 +665,24 @@ figcaption{
 }
 
 .form-label{
+
 	font-size: 0.8em;
-	color: lightgray;
+		font-family: 'Roboto', sans-serif;
 display: block;
 	width: 100%;
+	text-align: left;
+	color: black;
 
 }
 .form-button{
+	   
 	display: inline-block;
-	background-color: var(--color-neutral-light);
+	background-color: #341F48;
 	border-width: 0;
 	padding: 0.5em 1em;
 	font: inherit;
 	-webkit-appearance: none;
-	color: inherit;
+	color: white;
 	width: 100%;
 	border-radius: 0.2em;
 	cursor:pointer;
@@ -894,7 +937,10 @@ tr:nth-child(even) {
 
 
 
-
+.figure img {
+    width: 100%;
+    vertical-align: text-bottom;
+}
 
 
 
